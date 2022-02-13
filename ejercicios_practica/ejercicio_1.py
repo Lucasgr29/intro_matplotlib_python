@@ -35,4 +35,13 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    fig.suptitle('Funcion de lucas', fontsize = 16)
+    ax = fig.add_subplot()
+
+    ax.plot(x, y, label = 'Line plot', color = 'darkred')
+    ax.legend()
+    ax.grid()
+    plt.show()
+    
     print("terminamos")

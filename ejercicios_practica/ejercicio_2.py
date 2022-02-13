@@ -46,4 +46,14 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    fig.suptitle('COMPARACION DE Y', fontsize = 16)
+    ax = fig.add_subplot()
+
+    ax.plot( x, y1, label = 'Y1', color = 'k')
+    ax.plot( x, y2, label = 'Y2', color = 'b')
+    ax.legend()
+    ax.grid()
+    plt.show()
+
     print("terminamos")
